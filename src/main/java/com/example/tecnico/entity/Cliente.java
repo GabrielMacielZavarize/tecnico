@@ -9,6 +9,7 @@ import java.util.List;
 @Table(name = "clientes")
 public class Cliente extends Pessoa {
 
+
     @OneToMany(mappedBy = "cliente")
     private List<Chamado> chamados = new ArrayList<>();
 

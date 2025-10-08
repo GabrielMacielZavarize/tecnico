@@ -1,4 +1,4 @@
-package com.example.tecnico.enuns;
+package com.example.tecnico.enums;
 
 public enum Perfil {
 

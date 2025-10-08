@@ -1,14 +1,14 @@
-package com.example.tecnico.enuns;
+package com.example.tecnico.enums;
 
-public enum Status {
+public enum Prioridade {
 
-    ABERTO(0),
-    ANDAMENTO(1),
-    ENCERRADO(2);
+    BAIXA(0),
+    MEDIA(1),
+    ALTA(2);
 
     private final int codigo;
 
-    Status(int codigo) {
+    Prioridade(int codigo) {
         this.codigo = codigo;
     }
 
@@ -16,18 +16,17 @@ public enum Status {
         return codigo;
     }
 
-    public static Status toEnum(Integer codigo) {
+    public static Prioridade toEnum(Integer codigo) {
         if (codigo == null) {
             return null;
         }
 
-        for (Status s : Status.values()) {
-            if (codigo.equals(s.getCodigo())) {
-                return s;
+        for (Prioridade p : Prioridade.values()) {
+            if (codigo.equals(p.getCodigo())) {
+                return p;
             }
         }
 
         throw new IllegalArgumentException("Código inválido para Status: " + codigo);
     }
 }
-
