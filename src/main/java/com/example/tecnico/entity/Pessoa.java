@@ -8,9 +8,7 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
-@Entity
-@Table(name = "pessoas")
-@Inheritance(strategy = InheritanceType.JOINED)
+@MappedSuperclass
 public abstract class Pessoa {
 
     @Id
