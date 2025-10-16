@@ -28,7 +28,6 @@ public abstract class Pessoa {
     private String senha;
 
     @ElementCollection(fetch = FetchType.EAGER)
-    @CollectionTable(name = "pessoa_perfis", joinColumns = @JoinColumn(name = "pessoa_id"))
     @Enumerated(EnumType.STRING)
     @Column(name = "perfil", nullable = false)
     private Set<Perfil> perfis = new HashSet<>();
