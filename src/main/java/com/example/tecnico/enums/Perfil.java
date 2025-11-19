@@ -2,7 +2,7 @@ package com.example.tecnico.enums;
 
 public enum Perfil {
 
-    ADIMIN(0),
+    ADMIN(0),
     CLIENTE(1),
     TECNICO(2);
 
